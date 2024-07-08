@@ -5,7 +5,6 @@ const config: Config = {
   theme: {
     extend: {
       transform: ["group-hover"],
-      scale: ["group-hover"],
       container: {
         center: true,
         padding: "40px",
