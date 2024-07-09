@@ -36,7 +36,7 @@ const config: Config = {
           300: "#F2F2F2",
           400: "#ADADAD",
         },
-        black: "#3F3F3F",
+        black: "#000000",
         yellow: "#F2AE54",
       },
     },

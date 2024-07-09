@@ -10,7 +10,7 @@ export default function Header() {
         <a className="text-4xl uppercase font-semibold" href="/">
           Glory <br /> Photo
         </a>
-        <ul className="flex [&>*:not(:last-child)]:mr-10">
+        <ul className="flex [&>*:not(:last-child)]:mr-10 max-sm:hidden">
           <li className="text-sm uppercase">
             <a href="/">Home</a>
           </li>

@@ -10,6 +10,7 @@ const montserrat = Montserrat({ subsets: ["latin"] })
 // }
 
 import Header from "@/components/header/Header"
+import Footer from "@/components/footer/Footer"
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${montserrat.className} relative`}>
         <Header />
         <main> {children}</main>
+        <Footer />
       </body>
     </html>
   )
