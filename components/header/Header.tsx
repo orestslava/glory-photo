@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 export default function Header() {
@@ -7,18 +8,18 @@ export default function Header() {
   return (
     <header className="absolute z-50 w-full">
       <nav className={`container flex justify-between items-center ${pathName === "/" ? "text-white" : "text-black"} py-3`}>
-        <a className="text-4xl uppercase font-semibold" href="/">
+        <Link href="/" className="text-4xl uppercase font-semibold">
           Glory <br /> Photo
-        </a>
+        </Link>
         <ul className="flex [&>*:not(:last-child)]:mr-10 max-sm:hidden">
           <li className="text-sm uppercase">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li className="text-sm uppercase">
-            <a href="/gallery">Gallery</a>
+            <Link href="/gallery">Gallery</Link>
           </li>
           <li className="text-sm uppercase">
-            <a href="/">Contact</a>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       </nav>

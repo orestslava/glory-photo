@@ -28,9 +28,9 @@ export default function Footer() {
         <p className="uppercase text-sm text-center mb-5">Follow me on instagram</p>
         <ul className="grid grid-rows-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 w-full [&>*]:aspect-[1]">
           {instagramImages.map(item => (
-            <li key={item.id} className="relative hover:opacity-95 rounded-xl">
+            <li key={item.id} className="relative hover:opacity-95">
               <Link target="_blanc" className="block w-full h-full" href={item.link}>
-                <Image src={item.image} alt="" className="h-full object-cover rounded-xl" />
+                <Image src={item.image} alt="" layout="fill" objectFit="cover" className="rounded-xl" />
                 <Image src={instagramAbs} alt="" className="absolute top-1 right-1 max-w-[20px]" />
               </Link>
             </li>
