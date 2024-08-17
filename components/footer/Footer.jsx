@@ -23,7 +23,7 @@ const instagramImages = [
 
 export default function Footer() {
   return (
-    <footer className="w-full">
+    <footer className="w-full mt-[150px]">
       <div className="px-20 max-md:container">
         <p className="uppercase text-sm text-center mb-5">Follow me on instagram</p>
         <ul className="grid grid-rows-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 w-full [&>*]:aspect-[1]">

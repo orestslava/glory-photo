@@ -21,6 +21,16 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/gallery.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/gallery.js",
+    "components/header/Header.jsx",
+    "components/footer/Footer.jsx",
+    "app/gallery/page.jsx",
+    "app/gallery/[slug].page.jsx"
+  ],
   "exclude": ["node_modules"]
 }
