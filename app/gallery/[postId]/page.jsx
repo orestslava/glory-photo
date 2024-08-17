@@ -26,8 +26,8 @@ const GalleryPost = ({ params }) => {
 
   return (
     <div className="pt-[105px]">
-      <div className="container my-10 px-20">
-        <div className="grid grid-cols-2 gap-5 auto-rows-max">
+      <div className="container my-10 md:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 auto-rows-max">
           {arr.map(num => (
             <div key={num.id} className="relative">
               <div className="w-full h-[400px] ">
