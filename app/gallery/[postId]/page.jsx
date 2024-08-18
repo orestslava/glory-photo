@@ -5,13 +5,13 @@ import { useState, useEffect } from "react"
 
 function splitArrayIntoThreeEqualParts(array) {
   const totalObjects = array.length
-  const size = Math.floor(totalObjects / 4)
-  const remainder = totalObjects % 4
+  const size = Math.floor(totalObjects / 3)
+  const remainder = totalObjects % 3
 
-  let result = [[], [], [], []]
+  let result = [[], [], []]
   let startIndex = 0
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 3; i++) {
     let currentSize = size + (i < remainder ? 1 : 0)
     result[i] = array.slice(startIndex, startIndex + currentSize)
     startIndex += currentSize
@@ -45,7 +45,7 @@ const GalleryPost = ({ params }) => {
   return (
     <div className="pt-[105px]">
       <div className="container my-10 md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           {arr.map((col, i) => (
             <div key={i} className="flex flex-col gap-2 relative w-full h-full ">
               {col.map(colItem => (

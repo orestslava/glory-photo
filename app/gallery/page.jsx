@@ -4,11 +4,13 @@ import Link from "next/link"
 import post1 from "@/public/assets/images/gallery/1/1.jpg"
 import post2 from "@/public/assets/images/gallery/2/1.jpg"
 import post3 from "@/public/assets/images/gallery/3/1.jpg"
+import post4 from "@/public/assets/images/gallery/4/1.jpg"
 
 const galleryPosts = [
   { id: 1, image: post1, title: "Nastya" },
   { id: 2, image: post2, title: "якась мала" },
   { id: 3, image: post3, title: "Uliana and Roman" },
+  { id: 4, image: post4, title: "якась балерина" },
 ]
 
 export default function Gallery() {
