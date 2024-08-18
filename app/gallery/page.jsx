@@ -1,10 +1,13 @@
-import post1 from "@/public/assets/images/gallery/1/1.jpg"
-import post2 from "@/public/assets/images/gallery/1/2.jpg"
-import post3 from "@/public/assets/images/gallery/1/7.jpg"
 import Image from "next/image"
 import Link from "next/link"
 
-const galleryPosts = [{ id: 1, image: post1, title: "Nastya" }]
+import post1 from "@/public/assets/images/gallery/1/1.jpg"
+import post2 from "@/public/assets/images/gallery/2/1.jpg"
+
+const galleryPosts = [
+  { id: 1, image: post1, title: "Nastya" },
+  { id: 2, image: post2, title: "якась мала" },
+]
 
 export default function Gallery() {
   return (
