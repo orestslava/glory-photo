@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import post1 from "@/public/assets/images/gallery/1/1.jpg"
 import post2 from "@/public/assets/images/gallery/2/1.jpg"
-import post3 from "@/public/assets/images/gallery/3/1.jpg"
+import post3 from "@/public/assets/images/gallery/3/12.jpg"
 import post4 from "@/public/assets/images/gallery/4/1.jpg"
 
 const galleryPosts = [
