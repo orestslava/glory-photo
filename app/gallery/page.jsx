@@ -18,10 +18,10 @@ export default function Gallery() {
     <div className="pt-[105px]">
       <div className="container my-10">
         <h2 className="text-center text-3xl mb-5">Gallery</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-full">
           {galleryPosts.map(post => (
             <Link href={`/gallery/${post.id}`} key={post.id} className=" border border-gray-200 rounded-lg p-1">
-              <div className="w-full h-[250px] max-h-[250px] relative">
+              <div className="w-full h-[350px] max-h-[350px] relative">
                 <Image src={post.image} alt="post image" layout="fill" objectFit="cover" className="rounded-lg" />
               </div>
 
