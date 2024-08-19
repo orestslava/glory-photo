@@ -21,7 +21,7 @@ function MainPageSwiper() {
           document.querySelector(".current-slide").textContent = swiper.realIndex + 1
           document.querySelector(".total-slides").textContent = swiper.slides.length
         }}
-        autoplay={{ delay: 4500, disableOnInteraction: false }}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         modules={[Pagination, Autoplay, EffectFade, Navigation]}
         navigation={{
           nextEl: ".swiper-button-next-custom",
