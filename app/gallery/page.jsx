@@ -26,7 +26,6 @@ export default function Gallery() {
               <div className="w-full h-[350px] max-h-[350px] relative">
                 <Image src={post.image} alt="post image" layout="fill" objectFit="cover" className="rounded-lg" />
               </div>
-
               <h3 className="text-center py-2">{post.title}</h3>
             </Link>
           ))}
