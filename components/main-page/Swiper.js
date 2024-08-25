@@ -40,7 +40,7 @@ function MainPageSwiper() {
           />
         ))}
       </Swiper>
-      <div className="w-full absolute bottom-0 z-50 ">
+      <div className="w-full absolute bottom-0 z-20 ">
         <div className="container flex justify-center items-center border-t border-white py-5">
           <div className=".swiper-button-prev-custom  cursor-pointer" onClick={() => swiperRef.current && swiperRef.current.swiper.slidePrev()}>
             <svg className="w-[40px] h-[40px]" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">

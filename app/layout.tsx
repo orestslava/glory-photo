@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} relative`}>
+      <body className={`${montserrat.className} relative grid grid-rows-[1fr_auto] min-h-screen`}>
         <Header />
         <main> {children}</main>
         <Footer />
