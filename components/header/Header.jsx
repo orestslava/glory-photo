@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed z-50 w-full ${hasScrolledPastViewport ? "bg-slate-400/25 backdrop-blur-2xl" : ""}`}>
+      <header className={`fixed z-50 w-full ${hasScrolledPastViewport ? "bg-slate-400/25 backdrop-blur-40" : ""}`}>
         <nav className={`container flex justify-between items-center ${isMainPage ? "text-white" : "text-black"} py-3`}>
           <NavLink href="/" className="text-2xl md:text-3xl uppercase font-semibold">
             Glory <br /> Photo

@@ -41,6 +41,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".backdrop-blur-40": {
+          "-webkit-backdrop-filter": "blur(40px)",
+          "backdrop-filter": "blur(40px)",
+        },
+      }
+
+      addUtilities(newUtilities, ["responsive", "hover"])
+    },
+  ],
 }
 export default config
